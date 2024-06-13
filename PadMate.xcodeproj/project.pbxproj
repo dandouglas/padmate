@@ -14,6 +14,11 @@
 		0C86D7152C1B550300804E14 /* PadMateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C86D7142C1B550300804E14 /* PadMateTests.swift */; };
 		0C86D71F2C1B550300804E14 /* PadMateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C86D71E2C1B550300804E14 /* PadMateUITests.swift */; };
 		0C86D7212C1B550300804E14 /* PadMateUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C86D7202C1B550300804E14 /* PadMateUITestsLaunchTests.swift */; };
+		0C86D7312C1B568100804E14 /* RectangularForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C86D7302C1B568100804E14 /* RectangularForm.swift */; };
+		0C86D7342C1B682C00804E14 /* RectangularPad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C86D7332C1B682C00804E14 /* RectangularPad.swift */; };
+		0C86D7372C1B6D4D00804E14 /* RectangularPadServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C86D7362C1B6D4D00804E14 /* RectangularPadServiceProtocol.swift */; };
+		0C86D73A2C1B6D9B00804E14 /* RectangularPadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C86D7392C1B6D9B00804E14 /* RectangularPadService.swift */; };
+		0C86D73D2C1B701A00804E14 /* RectangularPadViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C86D73C2C1B701A00804E14 /* RectangularPadViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +49,11 @@
 		0C86D71A2C1B550300804E14 /* PadMateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PadMateUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C86D71E2C1B550300804E14 /* PadMateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PadMateUITests.swift; sourceTree = "<group>"; };
 		0C86D7202C1B550300804E14 /* PadMateUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PadMateUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0C86D7302C1B568100804E14 /* RectangularForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangularForm.swift; sourceTree = "<group>"; };
+		0C86D7332C1B682C00804E14 /* RectangularPad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangularPad.swift; sourceTree = "<group>"; };
+		0C86D7362C1B6D4D00804E14 /* RectangularPadServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangularPadServiceProtocol.swift; sourceTree = "<group>"; };
+		0C86D7392C1B6D9B00804E14 /* RectangularPadService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangularPadService.swift; sourceTree = "<group>"; };
+		0C86D73C2C1B701A00804E14 /* RectangularPadViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangularPadViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +104,7 @@
 		0C86D7022C1B550200804E14 /* PadMate */ = {
 			isa = PBXGroup;
 			children = (
+				0C86D72D2C1B550B00804E14 /* Features */,
 				0C86D7032C1B550200804E14 /* PadMateApp.swift */,
 				0C86D7052C1B550200804E14 /* ContentView.swift */,
 				0C86D7072C1B550300804E14 /* Assets.xcassets */,
@@ -125,6 +136,66 @@
 				0C86D7202C1B550300804E14 /* PadMateUITestsLaunchTests.swift */,
 			);
 			path = PadMateUITests;
+			sourceTree = "<group>";
+		};
+		0C86D72D2C1B550B00804E14 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				0C86D72E2C1B551500804E14 /* RectangularPads */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		0C86D72E2C1B551500804E14 /* RectangularPads */ = {
+			isa = PBXGroup;
+			children = (
+				0C86D73B2C1B6FF400804E14 /* ViewModels */,
+				0C86D7382C1B6D8500804E14 /* Services */,
+				0C86D7352C1B6CEB00804E14 /* Protocols */,
+				0C86D7322C1B67E700804E14 /* Models */,
+				0C86D72F2C1B555100804E14 /* Views */,
+			);
+			path = RectangularPads;
+			sourceTree = "<group>";
+		};
+		0C86D72F2C1B555100804E14 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0C86D7302C1B568100804E14 /* RectangularForm.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0C86D7322C1B67E700804E14 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0C86D7332C1B682C00804E14 /* RectangularPad.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0C86D7352C1B6CEB00804E14 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				0C86D7362C1B6D4D00804E14 /* RectangularPadServiceProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		0C86D7382C1B6D8500804E14 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				0C86D7392C1B6D9B00804E14 /* RectangularPadService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		0C86D73B2C1B6FF400804E14 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				0C86D73C2C1B701A00804E14 /* RectangularPadViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +328,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C86D7342C1B682C00804E14 /* RectangularPad.swift in Sources */,
 				0C86D7062C1B550200804E14 /* ContentView.swift in Sources */,
+				0C86D73D2C1B701A00804E14 /* RectangularPadViewModel.swift in Sources */,
 				0C86D7042C1B550200804E14 /* PadMateApp.swift in Sources */,
+				0C86D7372C1B6D4D00804E14 /* RectangularPadServiceProtocol.swift in Sources */,
+				0C86D73A2C1B6D9B00804E14 /* RectangularPadService.swift in Sources */,
+				0C86D7312C1B568100804E14 /* RectangularForm.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
