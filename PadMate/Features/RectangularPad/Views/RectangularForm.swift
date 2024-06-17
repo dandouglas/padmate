@@ -9,34 +9,34 @@ import Foundation
 import SwiftUI
 
 struct RectangularFormView: View {
-    @StateObject private var viewModel: RectangularPadViewModel
+    @StateObject private var rectangularPadViewModel: RectangularPadViewModel
 
     init(viewModel: RectangularPadViewModel) {
-        _viewModel = StateObject(wrappedValue: viewModel)
+        _rectangularPadViewModel = StateObject(wrappedValue: viewModel)
     }
 
     var body: some View {
         NavigationView {
             Form {
                 Section(header: Text("Distance Measurements")) {
-                    TextField("Width", text: $viewModel.width)
+                    TextField("Width", text: $rectangularPadViewModel.width)
                         .keyboardType(.numberPad)
-                        .onChange(of: viewModel.width) { viewModel.width = viewModel.width.filter { "0123456789".contains($0) }
+                        .onChange(of: rectangularPadViewModel.width) { rectangularPadViewModel.width = rectangularPadViewModel.width.filter { "0123456789".contains($0) }
                         }
                     
-                    TextField("Length", text: $viewModel.length)
+                    TextField("Length", text: $rectangularPadViewModel.length)
                         .keyboardType(.numberPad)
-                        .onChange(of: viewModel.length) { viewModel.length = viewModel.length.filter { "0123456789".contains($0) }
+                        .onChange(of: rectangularPadViewModel.length) { rectangularPadViewModel.length = rectangularPadViewModel.length.filter { "0123456789".contains($0) }
                         }
                     
-                    TextField("Depth", text: $viewModel.depth)
+                    TextField("Depth", text: $rectangularPadViewModel.depth)
                         .keyboardType(.numberPad)
-                        .onChange(of: viewModel.depth) { viewModel.depth = viewModel.depth.filter { "0123456789".contains($0) }
+                        .onChange(of: rectangularPadViewModel.depth) { rectangularPadViewModel.depth = rectangularPadViewModel.depth.filter { "0123456789".contains($0) }
                         }
                 }
                 
                 Button(action: {
-                    viewModel.calculateVolume()
+                    rectangularPadViewModel.calculateVolume()
                 }) {
                     Text("Calculate Volume")
                         .frame(maxWidth: .infinity)
@@ -46,7 +46,7 @@ struct RectangularFormView: View {
                         .cornerRadius(8)
                 }
                 
-                if let volume = viewModel.volume {
+                if let volume = rectangularPadViewModel.volume {
                     Section(header: Text("Volume")) {
                         Text("Volume: \(volume) cubic units")
                     }
