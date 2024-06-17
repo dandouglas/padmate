@@ -20,6 +20,8 @@
 		0C86D73A2C1B6D9B00804E14 /* RectangularPadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C86D7392C1B6D9B00804E14 /* RectangularPadService.swift */; };
 		0C86D73D2C1B701A00804E14 /* RectangularPadViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C86D73C2C1B701A00804E14 /* RectangularPadViewModel.swift */; };
 		0C86D7412C1B83E000804E14 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C86D7402C1B83E000804E14 /* ResultView.swift */; };
+		0C95CC0D2C20AE03007A3368 /* RectangularPadCoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C95CC0C2C20AE03007A3368 /* RectangularPadCoordinatorProtocol.swift */; };
+		0C95CC0F2C20B041007A3368 /* VolumeCalculationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C95CC0E2C20B041007A3368 /* VolumeCalculationError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,8 @@
 		0C86D7392C1B6D9B00804E14 /* RectangularPadService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangularPadService.swift; sourceTree = "<group>"; };
 		0C86D73C2C1B701A00804E14 /* RectangularPadViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangularPadViewModel.swift; sourceTree = "<group>"; };
 		0C86D7402C1B83E000804E14 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
+		0C95CC0C2C20AE03007A3368 /* RectangularPadCoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangularPadCoordinatorProtocol.swift; sourceTree = "<group>"; };
+		0C95CC0E2C20B041007A3368 /* VolumeCalculationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeCalculationError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				0C86D7362C1B6D4D00804E14 /* RectangularPadServiceProtocol.swift */,
+				0C95CC0C2C20AE03007A3368 /* RectangularPadCoordinatorProtocol.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -197,6 +202,7 @@
 			isa = PBXGroup;
 			children = (
 				0C86D73C2C1B701A00804E14 /* RectangularPadViewModel.swift */,
+				0C95CC0E2C20B041007A3368 /* VolumeCalculationError.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -347,7 +353,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C95CC0D2C20AE03007A3368 /* RectangularPadCoordinatorProtocol.swift in Sources */,
 				0C86D7342C1B682C00804E14 /* RectangularPad.swift in Sources */,
+				0C95CC0F2C20B041007A3368 /* VolumeCalculationError.swift in Sources */,
 				0C86D7062C1B550200804E14 /* ContentView.swift in Sources */,
 				0C86D73D2C1B701A00804E14 /* RectangularPadViewModel.swift in Sources */,
 				0C86D7042C1B550200804E14 /* PadMateApp.swift in Sources */,
